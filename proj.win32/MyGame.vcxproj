@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes\tags\gradients;..\Classes\tags\filter;..\Classes\tags\fillstyle;..\Classes\tags\display;..\Classes\tags\control;..\Classes\tags\bitmaps;..\Classes\tags\action;..\Classes\tags;..\Classes\tags\linestyle;..\Classes\tags\movieclip;..\Classes\tags\shapes;..\Classes\tags\shapes\record;..\Classes\tags\types;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CCIBufferReader.cpp" />
+    <ClCompile Include="..\Classes\CCIMovie.cpp" />
+    <ClCompile Include="..\Classes\CCIMovieHeader.cpp" />
+    <ClCompile Include="..\Classes\CCIMovieTag.cpp" />
+    <ClCompile Include="..\Classes\CCINode.cpp" />
+    <ClCompile Include="..\Classes\CCISWFDecoder.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\tags\action\CCIActionRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\action\CCIClipActionRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\action\CCIClipActions.cpp" />
+    <ClCompile Include="..\Classes\tags\action\CCIClipEventFlags.cpp" />
+    <ClCompile Include="..\Classes\tags\action\CCIDoAction.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBits.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG2.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG3.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG4.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless2.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIImageTag.cpp" />
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIJPEGTables.cpp" />
+    <ClCompile Include="..\Classes\tags\CCIFileAttributes.cpp" />
+    <ClCompile Include="..\Classes\tags\CCIFrameLabel.cpp" />
+    <ClCompile Include="..\Classes\tags\CCISetBackgroundColor.cpp" />
+    <ClCompile Include="..\Classes\tags\control\CCIEnd.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject2.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject3.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIRemoveObject.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIRemoveObject2.cpp" />
+    <ClCompile Include="..\Classes\tags\display\CCIShowFrame.cpp" />
+    <ClCompile Include="..\Classes\tags\fillstyle\CCIFillStyle.cpp" />
+    <ClCompile Include="..\Classes\tags\fillstyle\CCIFillStyleArray.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIBevelFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIBlurFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIColorMatrixFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIConvolutionFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIDropShadowFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIFilterList.cpp" />
+    <ClCompile Include="..\Classes\tags\filter\CCIGlowFilter.cpp" />
+    <ClCompile Include="..\Classes\tags\gradients\CCIFocalGradient.cpp" />
+    <ClCompile Include="..\Classes\tags\gradients\CCIGradient.cpp" />
+    <ClCompile Include="..\Classes\tags\gradients\CCIGradRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyle.cpp" />
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyle2.cpp" />
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyleArray.cpp" />
+    <ClCompile Include="..\Classes\tags\movieclip\CCIDefineSprite.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape2.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape3.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape4.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\CCIShapeWithStyle.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\record\CCICurvedEdgeRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIEndShapeRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIShapeRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIStraightEdgeRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIStyleChangeRecord.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCICxform.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCICxformWithAlpha.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCIMatrix.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCIRect.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCIRGB.cpp" />
+    <ClCompile Include="..\Classes\tags\types\CCIRGBA.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\CCIBufferReader.h" />
+    <ClInclude Include="..\Classes\CCIMovie.h" />
+    <ClInclude Include="..\Classes\CCIMovieHeader.h" />
+    <ClInclude Include="..\Classes\CCIMovieTag.h" />
+    <ClInclude Include="..\Classes\CCINode.h" />
+    <ClInclude Include="..\Classes\CCISWFDecoder.h" />
+    <ClInclude Include="..\Classes\CCITypes.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\tags\action\CCIActionRecord.h" />
+    <ClInclude Include="..\Classes\tags\action\CCIClipActionRecord.h" />
+    <ClInclude Include="..\Classes\tags\action\CCIClipActions.h" />
+    <ClInclude Include="..\Classes\tags\action\CCIClipEventFlags.h" />
+    <ClInclude Include="..\Classes\tags\action\CCIDoAction.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBits.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG2.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG3.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG4.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless2.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIImageTag.h" />
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIJPEGTables.h" />
+    <ClInclude Include="..\Classes\tags\CCIFileAttributes.h" />
+    <ClInclude Include="..\Classes\tags\CCIFrameLabel.h" />
+    <ClInclude Include="..\Classes\tags\CCISetBackgroundColor.h" />
+    <ClInclude Include="..\Classes\tags\control\CCIEnd.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject2.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject3.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIRemoveObject.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIRemoveObject2.h" />
+    <ClInclude Include="..\Classes\tags\display\CCIShowFrame.h" />
+    <ClInclude Include="..\Classes\tags\fillstyle\CCIFillStyle.h" />
+    <ClInclude Include="..\Classes\tags\fillstyle\CCIFillStyleArray.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIBevelFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIBlurFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIColorMatrixFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIConvolutionFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIDropShadowFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIFilter.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIFilterList.h" />
+    <ClInclude Include="..\Classes\tags\filter\CCIGlowFilter.h" />
+    <ClInclude Include="..\Classes\tags\gradients\CCIFocalGradient.h" />
+    <ClInclude Include="..\Classes\tags\gradients\CCIGradient.h" />
+    <ClInclude Include="..\Classes\tags\gradients\CCIGradRecord.h" />
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyle.h" />
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyle2.h" />
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyleArray.h" />
+    <ClInclude Include="..\Classes\tags\movieclip\CCIDefineSprite.h" />
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape.h" />
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape2.h" />
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape3.h" />
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape4.h" />
+    <ClInclude Include="..\Classes\tags\shapes\CCIShapeWithStyle.h" />
+    <ClInclude Include="..\Classes\tags\shapes\record\CCICurvedEdgeRecord.h" />
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIEndShapeRecord.h" />
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIShapeRecord.h" />
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIStraightEdgeRecord.h" />
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIStyleChangeRecord.h" />
+    <ClInclude Include="..\Classes\tags\types\CCICxform.h" />
+    <ClInclude Include="..\Classes\tags\types\CCICxformWithAlpha.h" />
+    <ClInclude Include="..\Classes\tags\types\CCIMatrix.h" />
+    <ClInclude Include="..\Classes\tags\types\CCIRect.h" />
+    <ClInclude Include="..\Classes\tags\types\CCIRGB.h" />
+    <ClInclude Include="..\Classes\tags\types\CCIRGBA.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\tags\bitmaps\.DS_Store" />
+    <None Include="..\Classes\tags\display\.DS_Store" />
+    <None Include="..\Classes\tags\fillstyle\.DS_Store" />
+    <None Include="..\Classes\tags\gradients\.DS_Store" />
+    <None Include="..\Classes\tags\linestyle\.DS_Store" />
+    <None Include="..\Classes\tags\shapes\record\.DS_Store" />
+    <None Include="..\Classes\tags\types\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

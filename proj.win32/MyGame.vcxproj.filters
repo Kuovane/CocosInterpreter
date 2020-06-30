@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags">
+      <UniqueIdentifier>{96c806d8-7fed-43cd-9b79-9bb4b05f246b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\action">
+      <UniqueIdentifier>{acc3466d-4d83-4266-96d6-7cb460ad78ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\bitmaps">
+      <UniqueIdentifier>{8e19e813-6303-4228-8602-57061c895c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\control">
+      <UniqueIdentifier>{a25d6675-ea78-41b2-b58b-fb246318da2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\display">
+      <UniqueIdentifier>{9479a819-9b97-4c65-8d90-cc343dff2b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\fillstyle">
+      <UniqueIdentifier>{c547a826-206e-4c49-bf22-a12264540e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\filter">
+      <UniqueIdentifier>{f8221e7e-fdc8-4660-9716-84688325fdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\gradients">
+      <UniqueIdentifier>{6170573b-a44f-40f4-bdce-fc2b34842675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\linestyle">
+      <UniqueIdentifier>{739bf0d6-15e3-43e5-ac05-50994ef846e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\movieclip">
+      <UniqueIdentifier>{6a481f1b-649a-48b1-bd93-a96af1f5edbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\shapes">
+      <UniqueIdentifier>{ea33710b-af81-4344-aa99-a85ecd9c6cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\types">
+      <UniqueIdentifier>{2eed2c5d-59e0-4a8a-9de3-e55dbc5f16c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tags\shapes\record">
+      <UniqueIdentifier>{09fc5b35-67fa-4516-936f-09a2848a064e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\CCIFileAttributes.cpp">
+      <Filter>src\tags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\CCIFrameLabel.cpp">
+      <Filter>src\tags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\CCISetBackgroundColor.cpp">
+      <Filter>src\tags</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\action\CCIActionRecord.cpp">
+      <Filter>src\tags\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\action\CCIClipActionRecord.cpp">
+      <Filter>src\tags\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\action\CCIClipActions.cpp">
+      <Filter>src\tags\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\action\CCIClipEventFlags.cpp">
+      <Filter>src\tags\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\action\CCIDoAction.cpp">
+      <Filter>src\tags\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBits.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG2.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG3.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG4.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless2.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIImageTag.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\bitmaps\CCIJPEGTables.cpp">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\control\CCIEnd.cpp">
+      <Filter>src\tags\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject2.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIPlaceObject3.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIRemoveObject.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIRemoveObject2.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\display\CCIShowFrame.cpp">
+      <Filter>src\tags\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\fillstyle\CCIFillStyle.cpp">
+      <Filter>src\tags\fillstyle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\fillstyle\CCIFillStyleArray.cpp">
+      <Filter>src\tags\fillstyle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIBevelFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIBlurFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIColorMatrixFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIConvolutionFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIDropShadowFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIFilterList.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\filter\CCIGlowFilter.cpp">
+      <Filter>src\tags\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\gradients\CCIFocalGradient.cpp">
+      <Filter>src\tags\gradients</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\gradients\CCIGradient.cpp">
+      <Filter>src\tags\gradients</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\gradients\CCIGradRecord.cpp">
+      <Filter>src\tags\gradients</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyle.cpp">
+      <Filter>src\tags\linestyle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyle2.cpp">
+      <Filter>src\tags\linestyle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\linestyle\CCILineStyleArray.cpp">
+      <Filter>src\tags\linestyle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\movieclip\CCIDefineSprite.cpp">
+      <Filter>src\tags\movieclip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCICxform.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCICxformWithAlpha.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCIMatrix.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCIRect.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCIRGB.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\types\CCIRGBA.cpp">
+      <Filter>src\tags\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape.cpp">
+      <Filter>src\tags\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape2.cpp">
+      <Filter>src\tags\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape3.cpp">
+      <Filter>src\tags\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\CCIDefineShape4.cpp">
+      <Filter>src\tags\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\CCIShapeWithStyle.cpp">
+      <Filter>src\tags\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\record\CCICurvedEdgeRecord.cpp">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIEndShapeRecord.cpp">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIShapeRecord.cpp">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIStraightEdgeRecord.cpp">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tags\shapes\record\CCIStyleChangeRecord.cpp">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCIBufferReader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCIMovie.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCIMovieHeader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCIMovieTag.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCINode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CCISWFDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\CCIFileAttributes.h">
+      <Filter>src\tags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\CCIFrameLabel.h">
+      <Filter>src\tags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\CCISetBackgroundColor.h">
+      <Filter>src\tags</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\action\CCIActionRecord.h">
+      <Filter>src\tags\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\action\CCIClipActionRecord.h">
+      <Filter>src\tags\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\action\CCIClipActions.h">
+      <Filter>src\tags\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\action\CCIClipEventFlags.h">
+      <Filter>src\tags\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\action\CCIDoAction.h">
+      <Filter>src\tags\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBits.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG2.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG3.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsJPEG4.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIDefineBitsLossless2.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIImageTag.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\bitmaps\CCIJPEGTables.h">
+      <Filter>src\tags\bitmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\control\CCIEnd.h">
+      <Filter>src\tags\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject2.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIPlaceObject3.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIRemoveObject.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIRemoveObject2.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\display\CCIShowFrame.h">
+      <Filter>src\tags\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\fillstyle\CCIFillStyle.h">
+      <Filter>src\tags\fillstyle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\fillstyle\CCIFillStyleArray.h">
+      <Filter>src\tags\fillstyle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIBevelFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIBlurFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIColorMatrixFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIConvolutionFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIDropShadowFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIFilterList.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\filter\CCIGlowFilter.h">
+      <Filter>src\tags\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\gradients\CCIFocalGradient.h">
+      <Filter>src\tags\gradients</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\gradients\CCIGradient.h">
+      <Filter>src\tags\gradients</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\gradients\CCIGradRecord.h">
+      <Filter>src\tags\gradients</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyle.h">
+      <Filter>src\tags\linestyle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyle2.h">
+      <Filter>src\tags\linestyle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\linestyle\CCILineStyleArray.h">
+      <Filter>src\tags\linestyle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\movieclip\CCIDefineSprite.h">
+      <Filter>src\tags\movieclip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCICxform.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCICxformWithAlpha.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCIMatrix.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCIRect.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCIRGB.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\types\CCIRGBA.h">
+      <Filter>src\tags\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape.h">
+      <Filter>src\tags\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape2.h">
+      <Filter>src\tags\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape3.h">
+      <Filter>src\tags\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\CCIDefineShape4.h">
+      <Filter>src\tags\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\CCIShapeWithStyle.h">
+      <Filter>src\tags\shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\record\CCICurvedEdgeRecord.h">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIEndShapeRecord.h">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIShapeRecord.h">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIStraightEdgeRecord.h">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tags\shapes\record\CCIStyleChangeRecord.h">
+      <Filter>src\tags\shapes\record</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCIBufferReader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCIMovie.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCIMovieHeader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCIMovieTag.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCINode.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCISWFDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CCITypes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\tags\bitmaps\.DS_Store">
+      <Filter>src\tags\bitmaps</Filter>
+    </None>
+    <None Include="..\Classes\tags\display\.DS_Store">
+      <Filter>src\tags\display</Filter>
+    </None>
+    <None Include="..\Classes\tags\fillstyle\.DS_Store">
+      <Filter>src\tags\fillstyle</Filter>
+    </None>
+    <None Include="..\Classes\tags\gradients\.DS_Store">
+      <Filter>src\tags\gradients</Filter>
+    </None>
+    <None Include="..\Classes\tags\linestyle\.DS_Store">
+      <Filter>src\tags\linestyle</Filter>
+    </None>
+    <None Include="..\Classes\tags\types\.DS_Store">
+      <Filter>src\tags\types</Filter>
+    </None>
+    <None Include="..\Classes\tags\shapes\record\.DS_Store">
+      <Filter>src\tags\shapes\record</Filter>
+    </None>
+  </ItemGroup>
+</Project>
